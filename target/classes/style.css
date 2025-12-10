@@ -1,0 +1,103 @@
+.root {
+    -fx-font-family: 'Segoe UI', sans-serif;
+    -fx-background-color: #1e1e1e;
+}
+
+.piano-keyboard {
+    -fx-background-color: #121212;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0);
+}
+
+.piano-key {
+    -fx-stroke: #000;
+    -fx-stroke-width: 1;
+}
+
+.white-key {
+    -fx-fill: linear-gradient(to bottom, #ffffff, #e0e0e0);
+    -fx-arc-width: 5;
+    -fx-arc-height: 5;
+}
+
+.black-key {
+    -fx-fill: linear-gradient(to bottom, #333333, #000000);
+    -fx-arc-width: 3;
+    -fx-arc-height: 3;
+}
+
+.key-target {
+    -fx-fill: #2196f3 !important;
+    -fx-effect: dropshadow(gaussian, #2196f3, 10, 0, 0, 0);
+}
+
+.key-correct {
+    -fx-fill: #00e676 !important;
+}
+
+.key-incorrect {
+    -fx-fill: #f44336 !important;
+}
+
+.key-free-play {
+    -fx-fill: #ffab00 !important;
+}
+
+.falling-notes-view {
+    -fx-background-color: #2b2b2b;
+}
+
+.note-rectangle {
+    -fx-fill: linear-gradient(to bottom, #64ffda, #1de9b6);
+    -fx-stroke: #004d40;
+    -fx-stroke-width: 1;
+    -fx-arc-width: 5;
+    -fx-arc-height: 5;
+}
+
+.beat-line {
+    -fx-stroke: #424242;
+    -fx-stroke-dash-array: 5 5;
+}
+
+.target-line {
+    -fx-stroke: #ffab40;
+    -fx-stroke-width: 2;
+    -fx-effect: dropshadow(gaussian, #ffab40, 5, 0, 0, 0);
+}
+
+.button {
+    -fx-background-color: #3d3d3d;
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+    -fx-padding: 8 15;
+}
+
+.button:hover {
+    -fx-background-color: #505050;
+}
+
+.label {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+
+.header-label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 10 0;
+}
+
+.list-view {
+    -fx-background-color: #2b2b2b;
+    -fx-control-inner-background: #2b2b2b;
+}
+
+.list-cell {
+    -fx-text-fill: #e0e0e0;
+}
+
+.list-cell:filled:selected:focused,
+.list-cell:filled:selected {
+    -fx-background-color: #4caf50;
+    -fx-text-fill: black;
+}
